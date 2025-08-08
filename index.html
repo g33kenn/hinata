@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You're Invited to Hinata's 6th Birthday!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Fredoka', sans-serif;
+            background-color: #FFFDF7;
+        }
+        .paint-splatter {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.8;
+            z-index: 0;
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+    </style>
+</head>
+<body class="text-[#073B4C] overflow-x-hidden">
+    <div class="relative min-h-screen p-4 sm:p-8">
+        <div class="paint-splatter" style="background-color: #FF6B6B; width: 200px; height: 200px; top: 5%; left: -50px; animation-duration: 7s;"></div>
+        <div class="paint-splatter" style="background-color: #FFD166; width: 150px; height: 150px; top: 20%; right: -40px; animation-duration: 8s; animation-delay: -2s;"></div>
+        <div class="paint-splatter" style="background-color: #06D6A0; width: 100px; height: 100px; bottom: 15%; left: 10%; animation-duration: 6s; animation-delay: -4s;"></div>
+        <div class="paint-splatter" style="background-color: #118AB2; width: 180px; height: 180px; bottom: 5%; right: 5%; animation-duration: 9s; animation-delay: -1s;"></div>
+
+        <div class="relative z-10 max-w-4xl mx-auto">
+            <header class="text-center mb-12">
+                <h1 class="text-5xl sm:text-7xl font-bold text-[#FF6B6B] my-2 inline-block transition-transform duration-300 ease-in-out hover:scale-105">Hinata is Turning 6!</h1>
+                <p class="text-lg sm:text-xl max-w-2xl mx-auto transition-transform duration-300 ease-in-out hover:scale-105">You're invited to a colorful celebration to get creative and make your own masterpiece.</p>
+            </header>
+
+            <main class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="md:col-span-2 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-6 text-center border-2 border-[#FFD166] transition-transform duration-300 ease-in-out hover:scale-105">
+                    <h3 class="text-3xl font-semibold mb-2">Painting Class ! 🎨</h3>
+                    <div class="flex justify-center items-center space-x-4">
+                        <div class="text-4xl">🗓️</div>
+                        <div>
+                            <p class="text-5xl font-bold text-[#06D6A0]">SEPTEMBER 30</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wrapper to center the card below -->
+                <div class="md:col-span-2 flex justify-center">
+                    <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-6 border-2 border-[#118AB2] w-full max-w-md transition-transform duration-300 ease-in-out hover:scale-105">
+                        <h3 class="text-3xl font-semibold mb-4 text-center">Party Details</h3>
+                        <ul class="space-y-4 text-lg">
+                            <li class="flex items-center">
+                                <span class="text-3xl w-10">⏰</span>
+                                <span class="text-2xl">11am to 1pm</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-3xl w-10">📍</span>
+                                <span class="text-2xl">The Church</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="md:col-span-2 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-6 border-2 border-[#FF6B6B] transition-transform duration-300 ease-in-out hover:scale-105">
+                    <!-- <h3 class="text-2xl font-semibold mb-6 text-center">The Plan for an Saturday morning</h3> -->
+                    <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 text-center">
+                        <div class="flex flex-col items-center">
+                            <div class="bg-[#e74c3c] text-white rounded-full h-20 w-20 flex items-center justify-center text-4xl shadow-md">🍕</div>
+                            <p class="mt-2 text-xl font-semibold">Pizza!</p>
+                        </div>
+                        <div class="text-2xl text-[#073B4C] font-bold sm:mx-4 transform sm:rotate-0 rotate-90">&rarr;</div>
+                        <div class="flex flex-col items-center">
+                            <div class="bg-[#FFD166] text-white rounded-full h-20 w-20 flex items-center justify-center text-4xl shadow-md">🎨</div>
+                            <p class="mt-2 text-xl font-semibold">Create Masterpieces</p>
+                        </div>
+                        <div class="text-2xl text-[#073B4C] font-bold sm:mx-4 transform sm:rotate-0 rotate-90">&rarr;</div>
+                        <div class="flex flex-col items-center">
+                            <div class="bg-[#06D6A0] text-white rounded-full h-20 w-20 flex items-center justify-center text-4xl shadow-md">🎂</div>
+                            <p class="mt-2 text-xl font-semibold">Cake</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="text-center mt-12">
+                <p class="text-3xl font-semibold transition-transform duration-300 ease-in-out hover:scale-105 inline-block">Please RSVP to Ariasy by August 16th </p>
+            </footer>
+        </div>
+    </div>
+    <script>
+        // Chart.js script removed as it is no longer needed.
+    </script>
+</body>
+</html>
